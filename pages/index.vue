@@ -1,23 +1,13 @@
 <template>
   <div class="container">
-    <div class="max-w-xs rounded overflow-hidden shadow-lg">
+    <div class="w-64 shadow">
       <img
-        class="w-full"
+        class="object-cover w-full"
         src="~/assets/images/tamanoya.jpg"
-        alt="Sunset in the mountains"
+        alt="玉乃屋"
       />
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">玉乃屋</div>
-      </div>
-      <div class="px-6 py-4">
-        <span
-          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-          >東京都</span
-        >
-        <span
-          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-          >調布市</span
-        >
+      <div>
+        <p class="font-bold text-xl text-center py-2">玉乃屋</p>
       </div>
     </div>
   </div>
@@ -29,13 +19,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 </style>
