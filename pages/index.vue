@@ -91,12 +91,4 @@ export default {
   background-repeat: no-repeat;
   height: 50vh;
 }
-
-.card1 {
-  @apply relative w-1/2 h-48 bg-indigo-900 overflow-hidden rounded-lg;
-}
-
-.card2 {
-  @apply relative w-1/2 h-48 bg-indigo-900 overflow-hidden rounded-lg;
-}
 </style>
