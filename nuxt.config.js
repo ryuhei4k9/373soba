@@ -19,7 +19,11 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap'
+          'https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700&display=swap&subset=japanese'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP'
       }
     ]
   },
