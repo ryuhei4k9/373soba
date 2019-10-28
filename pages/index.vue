@@ -12,61 +12,12 @@
       <div
         class="container max-w-4xl m-auto flex flex-wrap items-center justify-start"
       >
-        <div class="w-full md:w-1/2 lg:w-1/3 flex flex-col mb-8 px-3">
-          <div
-            class="overflow-hidden bg-white rounded-lg shadow hover:shadow-raised hover:translateY-2px transition"
-          >
-            <img
-              class="w-full"
-              src="~/assets/images/tamanoya.jpg"
-              alt="玉乃屋"
-            />
-            <div class="px-6 py-4 flex flex-col justify-between">
-              <h3 class="font-bold text-gray-900 mb-4 leading-normal">
-                玉乃屋
-              </h3>
-              <p class="inline-flex items-center text-xs">
-                <span
-                  class="bg-indigo-900 text-white mr-2 px-3 py-1 rounded-full"
-                >
-                  調布市
-                </span>
-                <span
-                  class="bg-indigo-900 text-white mr-2 px-3 py-1 rounded-full"
-                >
-                  深大寺
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 flex flex-col mb-8 px-3">
-          <div
-            class="overflow-hidden bg-white rounded-lg shadow hover:shadow-raised hover:translateY-2px transition"
-          >
-            <img
-              class="w-full"
-              src="~/assets/images/hyakusoba.jpg"
-              alt="浅草橋 百そば"
-            />
-            <div class="px-6 py-4 flex flex-col justify-between">
-              <h3 class="font-bold text-gray-900 mb-4 leading-normal">
-                浅草橋 百そば
-              </h3>
-              <p class="inline-flex items-center text-xs">
-                <span
-                  class="bg-indigo-900 text-white mr-2 px-3 py-1 rounded-full"
-                >
-                  台東区
-                </span>
-                <span
-                  class="bg-indigo-900 text-white mr-2 px-3 py-1 rounded-full"
-                >
-                  浅草橋
-                </span>
-              </p>
-            </div>
-          </div>
+        <div
+          v-for="shop of shops"
+          :key="shop.id"
+          class="w-full md:w-1/2 lg:w-1/3 flex flex-col mb-8 px-3"
+        >
+          <soba-card :shop="shop" />
         </div>
       </div>
     </section>
@@ -74,15 +25,23 @@
 </template>
 
 <script>
+import SobaCard from '~/components/SobaCard'
+import shops from '~/assets/json/shops.json'
+
 export default {
-  components: {}
+  components: { SobaCard },
+  data() {
+    return {
+      shops
+    }
+  }
 }
 </script>
 
 <style scoped>
 .wrapper {
   font-family: 'Noto Sans JP', serif;
-  background-color: #f4f7f5;
+  background-color: #fefded;
 }
 
 .hero {

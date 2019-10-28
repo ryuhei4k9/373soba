@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "shopName": "玉乃屋",
+    "thumbnailUrl": "~assets/images/tamanoya.jpg",
+    "tags": ["調布市", "深大寺"]
+  },
+  {
+    "id": 2,
+    "shopName": "浅草橋 百そば",
+    "thumbnailUrl": "~assets/images/hyakusoba.jpg",
+    "tags": ["中央区", "浅草橋"]
+  }
+]
